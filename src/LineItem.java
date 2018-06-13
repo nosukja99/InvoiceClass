@@ -91,7 +91,7 @@ public class LineItem {
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry) it.next();
             display =display+"\n"+items.get(pair.getKey()).get(0) + "\t" + orderedItemName.get(pair.getKey()).toString()
-                    + "\t" + pair.getKey() + "\t" + items.get(pair.getKey()).get(1)
+                    + "\t\t\t" + pair.getKey() + "\t\t" + items.get(pair.getKey()).get(1)
                     + "\t" + getEachPrice(pair.getKey().toString(),orderedItemName.get(pair.getKey()))+"\n";
         }
 
